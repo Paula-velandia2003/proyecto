@@ -8,12 +8,12 @@
                 <h1>{{mascota.nombre}}</h1>
 
                 {{error}}
-
-                {% csrf_token %}
+                
                 {{form.as_p}}
                 <div class="d-flex mt-5">
+                    
                     <form method="POST">
-                        
+                        {% csrf_token %}
                         <button class="btn btn-outline-warning bi bi-pencil-square">
                             Actualizar
                         </button>
